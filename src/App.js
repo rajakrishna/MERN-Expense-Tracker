@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Balance } from "./components/Balance";
 import { IncomeExp } from "./components/IncomeExp";
 import { TranscationList } from "./components/TranscationList";
+import { AddTranscation } from "./components/AddTranscation";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Balance />
 				<IncomeExp />
 				<TranscationList />
+				<AddTranscation />
 			</div>
 		</div>
 	);
