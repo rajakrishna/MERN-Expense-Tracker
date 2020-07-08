@@ -5,10 +5,11 @@ import { Balance } from "./components/Balance";
 import { IncomeExp } from "./components/IncomeExp";
 import { TranscationList } from "./components/TranscationList";
 import { AddTranscation } from "./components/AddTranscation";
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
 	return (
-		<div>
+		<GlobalProvider>
 			<Header />
 			<div className="container">
 				<Balance />
@@ -16,7 +17,7 @@ function App() {
 				<TranscationList />
 				<AddTranscation />
 			</div>
-		</div>
+		</GlobalProvider>
 	);
 }
 

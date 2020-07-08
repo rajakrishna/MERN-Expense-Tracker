@@ -16,7 +16,7 @@ const initialState = {
 export const GlobalContext = createContext(initialState);
 
 // Provider component
-export const GlobalProvidor = ({ children }) => {
+export const GlobalProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(AppReducer, initialState);
 
 	// Wrapping App.js in a provider
